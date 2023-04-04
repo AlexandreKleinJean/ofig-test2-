@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Panier</title>
+</head>
+
+<body>
+    <header>
+        <h1>oFig <span id="header__title">Figurines et statuettes</span></h1>
+        <h2>Votre panier <span id="header__subtitle"> 2 produits</span></h2>
+    </header>
+
+    <main>
+        <h3>Préférences de livraison</h3>
+
+    <div class="main__top">
+
+        <div class="main__form-left">
+                <form action="">
+                    <fieldset class="lieu">
+                        <legend>Où souhaitez-vous etre livré ?</legend>
+
+                        <label for="monAdresse">Mon adresse courante</label>
+                        <input type="radio" id="monAdresse" value="mon Adresse">
+
+                        <label for="autreAdresse">Autre adresse</label>
+                        <input type="radio" id="autreAdresse" value="Autre adresse">
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset class="option">
+                        <legend>Options</legend>
+
+                        <label for="suivi">Suivi de livraison par sms (inclus)</label>
+                        <input type="checkbox" id="suivi">
+
+                        <label for="satisfait">Satisfait ou remboursé (+ 2 euros)</label>
+                        <input type="checkbox" id="satisfait">
+
+                        <label for="garantie">Garantie 2 ans (+ 10 euros)</label>
+                        <input type="checkbox" id="garantie">
+                    </fieldset>
+                </form>    
+        </div>
+        
+
+   
+
+        <div class="main__form-right">
+            <form action="">
+                <fieldset class="adresse">
+                    <legend class="elementAdresse">Adresse</legend>
+
+                    <label for="rue">Rue</label>
+                    <input type="text" id="rue">
+
+                    <label for="code">Code postal</label>
+                    <input type="text" id="code">
+
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville">
+                </fieldset>
+            </form>
+
+            <form>
+                <fieldset class="infos">
+                    <legend>Informations complémentaires</legend>
+
+                    <label for="infos">Interphones, batiment, etc.</label>
+                    <textarea=" id="infos">
+                </fieldset>
+            </form>
+        </div>
+    </div>  
+
+
+ <div class="main__bottom">
+        <div class="main__final-price">
+            <p class="amount">Montant total à régler :</p>
+            <p class="price">197 €</p>
+
+        </div>
+
+        <div class="main__final-validation">
+            <div class="continue">Continuer vos achats</div>
+            <div class="validation">Valider et payer</div>
+
+        </div>
+ </div>
+</main>
+
+    <footer>oFig - toutes les images sont sous copyright SquareEnix</footer>
+</body>
+
+</html>
