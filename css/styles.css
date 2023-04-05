@@ -44,12 +44,20 @@ legend {
 .main__top {
     display: flex;
     flex-direction: row;
-    padding: 10px 80px;
     border-bottom: solid 1px black;
+    padding: 10px 80px;
+    margin: 10px 90px;
 }
+
+@media (max-width:760px) {
+        .main__top {display: flex;
+        flex-direction: column;}
+    }
+
 
 .main__form-left {
     width: 50%;
+    margin-bottom: 50px;
   
 }
 
@@ -72,10 +80,27 @@ legend {
 
 .adresse, .lieu {
     margin-bottom: 30px;
+    padding: 10px 5px;
 }
+
+.option, .lieu {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .adresse {
     margin-bottom: 30px;
+}
+
+.align {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 10px;
+}
+
+#monAdresse, #autreAdresse, #suivi, #satisfait, #garantie {
+    margin: 5px 10px;
 }
 
 #rue{
@@ -128,12 +153,14 @@ legend {
 }
 
 .main__final-validation {
+    border-top: 1px solid black;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 30px 20px;
-    margin: 10px 90px;
+    align-items: center;
+    padding: 5px 20px;
+    margin: 5px 90px;
 }
 
 
@@ -165,3 +192,31 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+
+/*---------------------------table-----------------------------------*/
+
+.table {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin: 20px 20px;
+}
+
+.product__head {
+    font-weight: bold;
+}
+
+.product__items,.product__price,.product__quantity,.product__items-total,.product__items-total-price {
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+.product__items-remove:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+

@@ -25,26 +25,37 @@
                     <fieldset class="lieu">
                         <legend>Où souhaitez-vous etre livré ?</legend>
 
+                    <div class="align">
+                        <input type="radio" id="monAdresse" name= "Address" value="mon Adresse">
                         <label for="monAdresse">Mon adresse courante</label>
-                        <input type="radio" id="monAdresse" value="mon Adresse">
-
+                    </div>
+                        
+                    <div class="align">
+                        <input type="radio" id="autreAdresse" name= "Address" value="Autre adresse" >
                         <label for="autreAdresse">Autre adresse</label>
-                        <input type="radio" id="autreAdresse" value="Autre adresse">
+                    </div>
                     </fieldset>
                 </form>
 
                 <form>
                     <fieldset class="option">
                         <legend>Options</legend>
-
-                        <label for="suivi">Suivi de livraison par sms (inclus)</label>
+                        
+                    <div class="align">
                         <input type="checkbox" id="suivi">
-
-                        <label for="satisfait">Satisfait ou remboursé (+ 2 euros)</label>
+                        <label for="suivi">Suivi de livraison par sms (inclus)</label>
+                    </div>
+                        
+                    <div class="align">
                         <input type="checkbox" id="satisfait">
-
-                        <label for="garantie">Garantie 2 ans (+ 10 euros)</label>
+                        <label for="satisfait">Satisfait ou remboursé (+ 2 euros)</label>
+                    </div>
+                        
+                    <div class="align">
                         <input type="checkbox" id="garantie">
+                        <label for="garantie">Garantie 2 ans (+ 10 euros)</label>
+                    </div>
+                        
                     </fieldset>
                 </form>    
         </div>
@@ -73,7 +84,7 @@
                     <legend>Informations complémentaires</legend>
 
                     <label for="infos">Interphones, batiment, etc.</label>
-                    <textarea=" id="infos">
+                    <textarea= cols="50" rows=« 20 » id="infos"></textarea>
                 </fieldset>
             </form>
         </div>
@@ -88,14 +99,58 @@
         </div>
 
         <div class="main__final-validation">
-            <div class="continue">Continuer vos achats</div>
-            <div class="validation">Valider et payer</div>
-
+            <button class="continue">Continuer vos achats</button>
+            <button class="validation" type="submit">Valider et payer</button>
         </div>
  </div>
 </main>
 
     <footer>oFig - toutes les images sont sous copyright SquareEnix</footer>
 </body>
+
+<div class="table"></div>
+<table> 
+	<thead class="product__head">
+	    <tr>
+		    <th class="product__items">Figurines</th>
+		    <th class="product__price">Prix</th>
+		    <th class="product__quantity">Quantité</th>
+	    </tr>
+	</thead>
+
+	<tbody>
+	    <tr>
+		    <td class="product__items">Batman</td>
+		    <td class="product__price">50 $</td>
+		    <td class="product__price">
+                <input type="number" id="product__items-joker" name="qty[0]" min="[0]" value="2">
+                <a href="#" class="product__items-remove">Supprimer</a>
+            </td>
+	    </tr>
+        <tr>
+		    <td class="product__items">Superman</td>
+		    <td class="product__price">60 $</td>
+		    <td class="product__price">
+                <input type="number" id="product__items-joker" name="qty[0]" min="[0]" value="2">
+                <a href="#" class="product__items-remove">Supprimer</a>
+            </td>
+	    </tr>
+        <tr>
+		    <td class="product__items">Joker</td>
+		    <td class="product__price">40 $</td>
+		    <td class="product__price">
+                <input type="number" id="product__items-joker" name="qty[0]" min="[0]" value="2">
+                <a href="#" class="product__items-remove">Supprimer</a>
+            </td>
+	    </tr>
+    </tbody>
+    
+    <tfoot>
+        <tr>
+            <td class="product__items-total" colspan="2">Total commande</td>
+            <td class="product__items-total-price">800 $</td>
+       </tr>
+    </tfoot>
+</table>
 
 </html>
